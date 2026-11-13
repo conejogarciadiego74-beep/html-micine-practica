@@ -16,16 +16,106 @@
         <ul>
             <li><a href="#sinopsis">Sinopsis</a></li>
             <li><a href="#glosario">Glosario de cine</a></li>
-            <li><a href="#salas">Salas e idiomas</a></li>
             <li><a href="#escenas">Mejores escenas</a></li>
             <li><a href="#horarios">Horarios y pases</a></li>
             <li><a href="#multimedia">Multimedia y documentación</a></li>
             <li><a href="#reserva">Formulario de reserva</a></li>
             <li><a href="../index.html">Volver a la portada</a></li>
             <li><a href="../index.html#estrenos">Ver el estreno destacado en la portada</a></li>
-            <li><a href="https://www.imdb.com/es/title/tt0317219/" target="_blank">Consultar en IMDb (base de datos externa)</a></li>
+            <li><a href="https://www.imdb.com/es/title/tt0317219/" target="_blank">Consultar en IMDb </a></li>
         </ul>
     
     <hr>
 
-   
+   <h2>Sinopsis de Cars</h2>
+   <p>Cars es una película animada de 2006 que sigue la historia de Lightning McQueen, un coche de carreras arrogante que viaja a Radiator Springs, donde aprende lecciones sobre la amistad y el sacrificio.</p>
+
+
+   <h2>Listas Informativas</h2>
+
+   <h3>Glosario de cine</h3>   
+    <ul>
+          <li><strong>Animación:</strong> Técnica cinematográfica que consiste en crear la ilusión de movimiento mediante la proyección de imágenes estáticas.</li>
+          <li><strong>CGI:</strong> Siglas de "Computer-Generated Imagery", se refiere a las imágenes generadas por ordenador utilizadas en esta película y en otras muchas.</li>
+          <li><strong>Storyboard:</strong> Serie de dibujos que representan las escenas de una película, utilizados para planificar la producción.</li>
+          <li><strong>Renderizado:</strong> Proceso de generar una imagen final a partir de un modelo 3D, aplicando texturas, luces y efectos visuales.</li>
+     </ul>
+
+    <h3>Escenas memorables</h3>
+    <ol>
+        <li>El triple empate de la Copa Pistón.</li>
+        <li>La amistad entre Lightning McQueen y Mater.</li>
+        <li>La carrera final donde McQueen demuestra su crecimiento personal ayudando al coche dinoco.</li>
+    </ol>
+
+    <h2>Horarios y pases</h2>
+    <table border="1">
+        <caption>Horarios de proyección de Cars</caption>
+        <thead>
+            <tr>
+                <th>Día</th>
+                <th>Hora</th>
+                <th>Idioma</th>
+                <th>Sala</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lunes</td>
+                <td>18:00</td>
+                <td>Español</td>
+                <td>Sala 1</td>
+            </tr>
+            <tr>
+                <td>Miércoles</td>
+                <td>20:00</td>
+                <td>Inglés con subtítulos</td>
+                <td>Sala 2</td>
+            </tr>
+            <tr>
+                <td>Viernes</td>
+                <td>22:00</td>
+                <td>Español</td>
+                <td>Sala 1</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <h2>Multimedia y documentación</h2>
+    <h3>Tráiler oficial de Cars</h3>
+    <iframe width="943" height="539" src="https://www.youtube.com/embed/XszNWHhpaTc" title="Cars Original Trailer (2006) | Cars 20th Anniversary" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h3>Banda sonora</h3>
+    <audio controls>
+        <source src="https://soundcloud.com/user-422144896/sets/pixar-cars-ost?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <h3>Dossier de prensa</h3>
+    <p>Descarga el dossier de prensa con información adicional sobre la película.</p>
+    <a href="https://dpcarswiki.com/List_of_media" target="_blank">Ver dossier de prensa (Wiki)</a>
+
+    <h2>Formulario de reserva</h2>
+    <form action="reserva.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="fecha">Fecha de la función:</label>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+
+        <label for="hora">Hora de la función:</label>
+        <select id="hora" name="hora" required>
+            <option value="">Seleccione una hora</option>
+            <option value="18:00">18:00</option>
+            <option value="20:00">20:00</option>
+            <option value="22:00">22:00</option>
+        </select><br><br>
+
+        <input type="submit" value="Reservar entradas">
+    </form>
+
+
